@@ -3,10 +3,10 @@ import { useState } from "react";
 
 
 function App() {
-  const Frame1 = require("./image/Frame1.png")
-  const Frame2 = require("./image/Frame2.png")
-  const Frame3 = require("./image/Frame3.png")
-  const Frame4 = require("./image/Frame4.png")
+  // const Frame1 = require("./image/Frame1.png")
+  // const Frame2 = require("./image/Frame2.png")
+  // const Frame3 = require("./image/Frame3.png")
+  // const Frame4 = require("./image/Frame4.png")
 
   const [color,serColor] = useState("Purple")
   const blueHanlder = ()=>{
@@ -61,7 +61,7 @@ enviroment that allows you to focus on the tasks  at hand.<br/> Whether you are 
 
       </div>
       <div className="object-contain max-w-sm mr-20 xl:max-w-lg xl:mr-32">
-        {color === "Purple" ? <img src={Frame1}  className="w-3/4" alt="frame"/> : color === "Green" ? <img src={Frame2} alt="frame"/> : color === "Red" ? <img src={Frame3} alt="frame"/> : <img src={Frame4} alt="frame"/> }
+        {color === "Purple" ? <img src="/image/Frame1.png" loading="lazy"  className="w-3/4" alt="frame"/> : color === "Green" ? <img src="/image/Frame2.png" loading="lazy" alt="frame"/> : color === "Red" ? <img src="/image/Frame3.png" loading="lazy" alt="frame"/> : <img src="/image/Frame4.png" loading="lazy" alt="frame"/> }
       </div>
      </div>
     </div>
